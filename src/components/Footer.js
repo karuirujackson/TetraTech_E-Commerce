@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import {BsLinkedin, BsGithub, BsYoutube, BsInstagram, BsFacebook} from 'react-icons/bs'
 
 const Footer = () => {
   return (
@@ -29,8 +31,68 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <footer className='footer text-warning py-3'>B</footer>
-      <footer className='footer text-warning py-4'>
+      <footer className='py-4'>
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-4">
+              <h4 className='text-white mb-4'>Contacts</h4>
+              <div className='footer-links d-flex flex-column'>
+                <address className='text-white fs-6'>
+                  SkyMall Building, Luthuli Avenue. <br /> Nairobi CBD.
+                </address>
+                <a href="Tel: +254711659920" className="text-white mt-3 d-block mb-1">+254711659920</a>
+                <a href="mailto: tetratechelectronics@gmail.com" className=" text-white mt-2 d-block mb-0">tetratechelectronics@gmail.com</a>
+                <div className="social_icons d-flex align-items-center gap-30 mt-4">
+                  <a className='text-white' href="Linkedin">
+                    <BsFacebook className='fs-4'/>
+                  </a>
+                  <a className='text-white' href="Github">
+                  <BsInstagram className='fs-4'/>
+                  </a>
+                  <a className='text-white' href="Youtube">
+                    <BsYoutube className='fs-4'/>
+                  </a>
+                  <a className='text-white' href="Instagram">
+                  < BsGithub className='fs-4'/>
+                  </a>
+                  <a className='text-white' href="Facebook">
+                  <BsLinkedin className='fs-4'/>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <h4 className='text-white mb-4'>Information</h4>
+              <div className='footer-links d-flex flex-column'>
+                <Link className='text-white py-2 mb-1'>Privacy Policy</Link>
+                <Link className='text-white py-2 mb-1'>Refund Policy</Link>
+                <Link className='text-white py-2 mb-1'>Shipping Policy</Link>
+                <Link className='text-white py-2 mb-1'>Terms & Conditions</Link>
+                <Link className='text-white py-2 mb-1'>Blogs</Link>
+              </div>
+            </div>
+            <div className="col-3">
+              <h4 className='text-white mb-4'>Account</h4>
+              <div className='footer-links d-flex flex-column'>
+                <Link className='text-white py-2 mb-1'>Search</Link>
+                <Link className='text-white py-2 mb-1'>About Us</Link>
+                <Link className='text-white py-2 mb-1'>FAQ</Link>
+                <Link className='text-white py-2 mb-1'>Contact</Link>
+              </div>
+            </div>
+            <div className="col-2">
+              <h4 className='text-white mb-4'>Quick Links</h4>
+              <div className='footer-links d-flex flex-column'>
+                <Link className='text-white py-2 mb-1'>Laptops</Link>
+                <Link className='text-white py-2 mb-1'>HeadPhones</Link>
+                <Link className='text-white py-2 mb-1'>Tablet</Link>
+                <Link className='text-white py-2 mb-1'>Watch</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <footer className='py-4'>
         <div className="container-xxl"> 
           <div className="row">
             <div className="col-12">
